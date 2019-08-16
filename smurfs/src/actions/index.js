@@ -13,8 +13,19 @@ export const getData = () => {
                 dispatch({ type: FETCH_DATA_SUCCESS, payload: res.data })
             })
             .catch(error => {
-                console.log(error);
+                console.log(error, error.response);
                 dispatch({ type: FETCH_DATA_FAILURE, payload: error.response })
             })
     }
 };
+
+export const POST_DATA_START = 'POST_DATA_START';
+export const POST_DATA_SUCCESS = 'POST_DATA_SUCCESS';
+export const POST_DATA_FAILURE = 'POST_DATA_FAILURE';
+
+// export const postData = () => {
+//     return dispatch => {
+//         dispatch({ type: POST_DATA_START });
+        
+//     }
+// }
