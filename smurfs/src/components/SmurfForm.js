@@ -23,13 +23,14 @@ const FormikSmurfForm = withFormik({
             height: height || '',
         };
     },
-    handleSubmit(values) {
+    handleSubmit(values, {resetForm}) {
         console.log(values);
         axios.post('http://localhost:3333/smurfs', values)
             .then(res => {
-                console.log(res.data);
+                //console.log(res.data);
             })
             .catch(error => console.log(error.response));
+        resetForm();
     }
 
 })(SmurfForm);

@@ -11,7 +11,7 @@ const SmurfsList = (props) => {
             <div className="header">
                 <button onClick={props.getData}>
                     {props.loading ? (
-                        '...Loading'
+                        'Loading...'
                     ) : (
                         'Build Smurf Village'
                     )}
