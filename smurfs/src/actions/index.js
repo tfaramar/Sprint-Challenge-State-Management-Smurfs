@@ -19,13 +19,21 @@ export const getData = () => {
     }
 };
 
-export const POST_DATA_START = 'POST_DATA_START';
-export const POST_DATA_SUCCESS = 'POST_DATA_SUCCESS';
-export const POST_DATA_FAILURE = 'POST_DATA_FAILURE';
+// export const POST_DATA_START = 'POST_DATA_START';
+// export const POST_DATA_SUCCESS = 'POST_DATA_SUCCESS';
+// export const POST_DATA_FAILURE = 'POST_DATA_FAILURE';
 
-// export const postData = () => {
+// export const postData = (values) => {
 //     return dispatch => {
 //         dispatch({ type: POST_DATA_START });
-        
+//         axios.post('http://localhost:3333/smurfs', values)
+//             .then(res => {
+//                 console.log(res.data);
+//                 dispatch({ type: POST_DATA_SUCCESS })
+//             })
+//             .catch(error => {
+//                 console.log(error.response);
+//                 dispatch({ type: POST_DATA_FAILURE })
+//             })
 //     }
-// }
+// };
